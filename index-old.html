@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,900" rel="stylesheet">
 
 
@@ -11,32 +10,24 @@
 
 </head>
 <body>
-	<div class="wrap">
+	<div id="wrap">
+	<canvas id="canvas"></canvas>
 	<div class="container">
-	
-			<h1>Immaterial space</h1><br>
+		<div class="abstract-text">
+			<h1>Immaterial space</h1>
 			<p>This paper is a collection of stories, written from a perspective of the Observer in a form of a diary. His perception of time is not linear, he always lived and will ever be. He is one and he is everyone. His aim is to dive into humans’ experiences, feel as they feel, separate into pieces and come back together. He is longing to find a key to open the human consciousness and to find the binding element between mind and the body. Manoeuvring between materialism and spirituality, he will try to analyze the choices he makes. He wonders why humans have an urge to express their ideas in the tangible form, and he will try to prove that the sense of touch is what makes us human. Do you want to join his journey? Be prepared to get into a retrospective exploration of the human kind. <br> <br>
 			When you will start, you’ll see this Observer as an immortal Being, omnipresent, disembodied, a scanned human consciousness, living in the hard drive of a computer, spinning in millions of light years from the long ago went out sun. Gradually you will move towards the time which we perceive as nowadays, watching over how technology has changed humans’ relationships with their own bodies and physical interactions with the world around them; you will go further to the time before technological revolution and see how people perceived they bodies back then; you will examine some of the debates on human duality and become a witness in the battle between mind and body. But be careful when you reach the last frontier — by reaching the end you will close the circle.</p>
-		
 	</div>
+	</div>
+</div>
 	<div class="back">
 		
 		<!-- <img id = "backimg" src ="img.jpg"> -->
 	</div>
-	</div>
+
 
 </body>
  <script>
-
-$(document).ready(function() {
-  var $back = $(".back"),
-      backWHalf = $back.width() / 2;
-  $(document).on("mousemove", function(e) {
-    $back.css({"left": e.pageX - backWHalf, "top": e.pageY - backWHalf});
-  });
-});
-
-
 // var ctx = canvas.getContext("2d"),
 	
 //     img = new Image,
@@ -80,47 +71,47 @@ $(document).ready(function() {
 // fadeOut();
 // }
 
-// var ctx = canvas.getContext("2d"),
-// 	painting = false,
-//     img = new Image,
-// //     lastX = 0,
-// //     lastY = 0;
-//     radius = 40;
+var ctx = canvas.getContext("2d"),
+	painting = false,
+    img = new Image,
+//     lastX = 0,
+//     lastY = 0;
+    radius = 40;
 
 
-// var dimension = [document.documentElement.clientWidth, document.documentElement.clientHeight];
-// var c = document.getElementById("canvas");
-// c.width = dimension[0];
-// c.height = dimension[1];
+var dimension = [document.documentElement.clientWidth, document.documentElement.clientHeight];
+var c = document.getElementById("canvas");
+c.width = dimension[0];
+c.height = dimension[1];
 
 
-// img.onload = setup;
-// img.src = "img.jpg";
+img.onload = setup;
+img.src = "img.jpg";
 
-// function setup() {
+function setup() {
   
-//   ctx.fillStyle = ctx.createPattern(this, "no-repeat");
-//   // ctx.globalCompositeOperation = 'multiply';
+  ctx.fillStyle = ctx.createPattern(this, "no-repeat");
+  // ctx.globalCompositeOperation = 'multiply';
   
-//   canvas.onmousemove = function(e) {
+  canvas.onmousemove = function(e) {
 
-//     // if (!painting) {
-//     //     painting = true;
-//     // } else {
-//     //     painting = false;
-//     // }
-//     var r = this.getBoundingClientRect(),
-//         x = e.clientX - r.left,
-//         y = e.clientY - r.top;
+    // if (!painting) {
+    //     painting = true;
+    // } else {
+    //     painting = false;
+    // }
+    var r = this.getBoundingClientRect(),
+        x = e.clientX - r.left,
+        y = e.clientY - r.top;
     
-//     ctx.beginPath();
-//     ctx.moveTo(x + radius, y);
-//     ctx.arc(x, y, radius, 0, 2*Math.PI);
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.moveTo(x + radius, y);
+    ctx.arc(x, y, radius, 0, 2*Math.PI);
+    ctx.fill();
 
     
-//   };
-// }
+  };
+}
 
 // var canvas = document.getElementById("canvas"),
 //     ctx = canvas.getContext("2d"),
@@ -166,8 +157,5 @@ $(document).ready(function() {
 // }
 
 // fadeOut();
-
-
-
 </script>
 </html>
