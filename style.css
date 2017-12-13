@@ -15,6 +15,8 @@ html, body {
 	margin: 0 auto;
 	height:65%;
 	padding: 0;
+	text-align: justify;
+	text-justify:inter-word;
 	/*margin-left: 8%;*/
 	/*margin-top:5%;*/
 /*	z-index: 10;*/
@@ -30,21 +32,21 @@ html, body {
     );
 	position: fixed;
 }
-section {
-	height:65%;
-	/*overflow-y: scroll;*/
-	margin-top: -5%;
-	text-align: justify;
 
-}
 a {
 	color:black;
+	font-family: 'Roboto';
 	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
 }
-
+h2 {
+	display: none;
+	margin-top:20%;
+	font-size: 80pt;
+	font-family: 'Roboto';
+}
 h1 {
 	text-align: center;
 /*	margin-left: 8%;*/
@@ -53,6 +55,7 @@ h1 {
 	font-weight: 300;
 	/*z-index: 1000;*/
 	padding-bottom: 0;
+	font-family: 'Roboto';
 	
 }
 p {
@@ -61,7 +64,47 @@ p {
 	/*z-index: 1000;*/
 
 }
+.textblock {
+	margin-bottom: 50%;
+}
+#formal {
+	font-family: 'Roboto';
+}
+span {
+	text-align: left;
+}
+.txt {
+	width:30%;
+	float: left;
+	font-size: 11pt;
+	font-family: 'Roboto';
+	margin-left:-32%;
+}
 
+.txt.frst {
+	margin-top: 50%; 
+}
+.txt.scnd {
+
+	margin-top: 22%; 
+}
+.txt.third {
+
+	margin-top: 33%; 
+}
+#txt-mono {
+	font-family: 'VT323', monospace;
+}
+img {
+	width: 30%;
+	margin-left:-32%;
+	margin-top: 3%; 
+	float: left;
+/*	position: relative;*/
+}
+#imgsecond {
+	margin-top:30%;
+}
 label {
 	position: absolute;
 	top:20%;
@@ -69,31 +112,30 @@ label {
     display: block;
     cursor:pointer;
 }
-.block {
+
+.table-all {
+	right:3%;
+	top:15%;
 	position: fixed;
-	top:30%;
-	left:10%;
-	width:100px;
-	height:100px;
-	background: pink;
-	display: none;
+
 }
-.blockshow {
-	display: block;
-}
-.table {
-	position: fixed;
-	right:5%;
+.table-all a {
+	display: block; 
+	margin-bottom: 10px;
 }
 .t1,.t2,.t3,.t4,.t5,.t6,.t7,.t8 {
-	position: fixed;
-	font-size: 12pt;
-	right:5%;
+	display: block; 
+	top:10%
+	right:0;
+/*	position: fixed;*/
+	font-size: 11pt;
 	transition: all 0.2s ease-in-out;
 }
 .view {
 	color:red;
 } 
+
+/*
 .t1 {
 	top:15%;
 }
@@ -126,7 +168,7 @@ label {
 .t8 {
 	top:50%;
 }
-
+*/
 
 /*
 
@@ -172,14 +214,21 @@ position: fixed;
 .poly1-two {
 	top: 30%;
 	left: 10;	
-
 	-webkit-clip-path: polygon(20% 50%, 86% 8%, 0% 80%);
 }
+.poly1-three {
+	top: 10%;
+	left: 45;	
+	-webkit-clip-path: polygon(90% 0%, 6% 85%, 10% 70%);
+}
+
+
+
 .poly2 {
 	top: 55%;
 	right: 90;	
 	background-color: black;
--webkit-clip-path: polygon(100% 0, 18% 20%, 93% 39%);
+	-webkit-clip-path: polygon(100% 0, 18% 20%, 93% 39%);
 }
 
 .poly2-two {
@@ -187,6 +236,15 @@ position: fixed;
 	right: 80;	
 	-webkit-clip-path: polygon(80% 20%, 40% 0, 73% 31%);
 }
+
+.poly2-three {
+	top: 15%;
+	right: 120;	
+	-webkit-clip-path: polygon(0% 73%, 10% 60%, 3% 43%);
+}
+
+
+
 
 .poly3 {
 	top: 35%;
@@ -201,6 +259,14 @@ position: fixed;
 -webkit-clip-path: polygon(50% 60%, 4% 82%, 3% 30%);
 }
 
+.poly3-three {
+	top: 15%;
+	left: 10;	
+-webkit-clip-path: polygon(0% 43%, 43% 8%, 30% 10%);
+}
+
+
+
 .poly4 {
 	top: -40%;
 	left: 20;	
@@ -212,6 +278,13 @@ position: fixed;
 	left: 20;	
 -webkit-clip-path: polygon(10% 62%, 18% 78%, 72% 93%);
 }
+
+.poly4-three {
+	top: 35%;
+	left: 50;	
+-webkit-clip-path: polygon(50% 12%, 73% 7%, 12% 48%);
+}
+
 
 
 .poly5 {
@@ -226,6 +299,14 @@ position: fixed;
 	right: 65;	
 	-webkit-clip-path: polygon(79% 50%, 98% 75%, 72% 93%);
 }
+
+.poly5-three {
+	top: 15%;
+	right: 5;	
+	-webkit-clip-path: polygon(9% 5%, 48% 25%, 20% 3%);
+}
+
+
 .poly6 {
 	top: 85%;
 	right: 350;	
@@ -239,4 +320,9 @@ position: fixed;
 -webkit-clip-path: polygon(20% 70%, 10% 60%, 19% 29%);
 }
 
+.poly6-three {
+	top: 25%;
+	right: 15;	
+-webkit-clip-path: polygon(60% 10%, 43% 6%, 59% 39%);
+}
 

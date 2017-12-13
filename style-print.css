@@ -3,35 +3,53 @@
 	size:A4;
 	margin:0;
 }
-@page :first {
+/*@page :first {
 
-}
-
-#firsttitle {
+}*/
+  h1 { 
+    page-break-before: always;
+  }
+/*#firsttitle {
 	font-size: 3cm;
 	text-align: center;
 	margin-top: 8cm;
 	margin-left: 0;
+}*/
+h2 {
+	display: block;
+}
+body,html {
+	overflow: visible;
+}
+.container {
+	/*margin-top: 12cm;*/
+	width:60%;
+
+}
+#container-overlay {
+	display: none;
 }
 
-	body,html {
-		overflow: visible;
+.textblock {
+	margin-bottom: 10%;
+}
+/*section {
+	overflow: visible;
+	}*/
+.table-all {
+	position: fixed;
+	display: none;
+
+}
+p {
+	font-size: 12pt;
 	}
-	.container {
-		margin-top: 12cm;
-		width:50%;
-	}
-	#container-overlay {
-		display: none;
-	}
-	section {
-		overflow: visible;
-	}
-	p {
-		font-size: 19px;
-	}
-	h1 {
-		font-size: 60px;
+span {
+	font-size: 10pt;
+}
+h1 {
+	margin-top: 0;
+	font-size: 40pt;
 }
 
 a {
