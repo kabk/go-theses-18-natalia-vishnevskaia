@@ -1,7 +1,7 @@
 
 @import "compass/css3";
 
-#one, #two {
+/*#one, #two {
 	display:none;
 		  border-left: 40px solid white;
   padding: 10px;
@@ -14,23 +14,23 @@
 	display: block;
 
 
-}
+}*/
 
-#polygon-wrap {
+
 /*  width: 500px; height: 500px;*/
 /*  z-index: 1000;
   border: 4pt solid black;*/
 /*  position: absolute;*/
 /*	top:20%;
 	right:20%;*/
-
+#polygon-wrap {
 	width:20px;
+	 position: fixed; 
 	height:20px;
 	background-color: black;
 	border-radius: 50%;
   div { 
-    position: absolute; 
-	/*display:none;*/
+    position: fixed; 
     z-index: 1000;
      width: 500px; height: 500px;
     top: 0; left: 0;
@@ -48,7 +48,7 @@
         }
     }	
   }
-&:hover {
+/*&:hover {*/
 /*#path1 {*/
 	div:nth-child(1) {
 		top: 80%;
@@ -88,8 +88,51 @@
 	-webkit-clip-path: polygon(96% 53%, 98% 75%, 72% 93%);
 }
 }
-}
+/*}*/
 
 /*#one:target {
 
 }*/
+
+
+
+#polygon-wrap {
+
+	div:nth-child(1) {
+		top: 80%;
+		left: 0;
+		/*background-color: #46008C;*/
+		-webkit-clip-path: polygon(100% 0, 16% 18%, 65% 20%);
+}
+
+/*#path2 {*/
+	div:nth-child(2) {
+	top: 80%;
+	left: 20%;
+	/*background-color: #46008C;*/
+	-webkit-clip-path: polygon(100% 0, 18% 20%, 93% 39%);
+}
+/*#path3 {*/
+	div:nth-child(3) {
+	top: 60%;
+	left: 25%;
+	/*background-color: #46008C;*/
+	-webkit-clip-path: polygon(43% 7%, 86% 24%, 93% 39%);
+}
+
+/*#path4 {*/
+	div:nth-child(4) {
+	top: -20%;
+	left: 55%;
+	/*background-color: #46008C;*/
+	-webkit-clip-path: polygon(33% 62%, 18% 78%, 72% 93%);
+}
+
+/*#path5 {*/
+	div:nth-child(5) {
+	top: -15%;
+	left: 55%;
+	/*background-color: #46008C;*/
+	-webkit-clip-path: polygon(96% 53%, 98% 75%, 72% 93%);
+}
+}

@@ -23,16 +23,7 @@
 
 
 	<div class="container">
-				<div class="table">
-				<a href="#one" class="table t1">Immaterial space</a>
-				<a href="#two" class="table t2">After the Sun Expansion</a>
-				<a href="#three" class="table t3">Alternative Labour </a>
-				<a href="#four" class="table t4">(Virtual) Reality</a>
-				<a href="#five" class="table t5">Body Modification</a>
-				<a href="#six" class="table t6">Designer Babies</a>
-				<a href="#seven" class="table t7">End</a>
-				<a href="#eight" class="table t8">References</a>
-				</div>
+				
 			<section>
 
 			
@@ -122,32 +113,57 @@
 			The overly experienced visitors of virtual worlds often have peculiar sensations when they deal with regular reality. Images and expectations of virtual world blend with the real, and we are tend to make more mistakes or improper gestures. I can’t count the times when I unconsciously tried to mentally press the cmd+z combination after doing something wrong with a physical object — for instance, when writing or drawing something on paper. Things can become even more confusing. Every time when I use a right-click context menu to copy something, I feel a slight pressure on my right hand, as if something ephemeral was inserted into it. This feeling can be, in a way, very useful. Sometimes due to my lack of attention I might forget what I was doing and start browsing things or switch to another project, but after I notice that the feeling in my right hand is still exist I realize that I actually forgot to paste something. Proprioceptive senses of my body developed in junction with my indistinguishable computer prosthesis. <br><br> 
 			</p></div>
 
+
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<div id="five">
+			<h1 class="title" id="secondtitle">Body Modification</h1>
+			<p>A week ago I was a Norwegian fisherman.<br>
+			Yesterday I was a 12-year old girl from Peru.<br>
+			Today I am a designer of virtual worlds.<br>
+			It’s ok to have dozens of personalities online. Except for having ability to easily switch genders, it is no difference from the chameleon-like behaviour of of people in the offline life. <br>
+			You might only start worrying when you perceive no difference between the two.
+			<br><br>
+			There are certain characteristics of virtual worlds. Computer simulations turned regular physics into information conveyed through symbols. I know that something should look like this, and I expect it to behave in some specific way. But the beauty of virtual worlds lies in the fact that the behaviour of elements within it depends on the programmer’s imagination rather than on the way things happen on this Euclidian-Newtonian earth. If I drop an object in the virtual world, it might just go up or even multiply and go sideways — the laws of this world can be logical and consistent, but not necessarily with real physics. The symbols become the reality.
+			<br><br>
+			There is another distinctive feature which users face in digital worlds, especially when using virtual reality headsets. Actions taken in the virtual world often have a serious time lag, but this technical detail must be solved very soon with the advance of computational power.
+			<br><br>
+			Actually, there is a certain danger of having constant access to virtual and augmented reality headsets and glasses. It lies in the fact that when you take the display off, you not only might feel a slight nausea, but also an effect which Michael Heim called “Alternate World Syndrome”. How he explained it, after hours of immersion in 360-degree simulation in 1994 (one of the first virtual reality artworks, ‘Virtual Dervish’ was made by Marcos Novak, Diane Gromala and Yakov Sharir and exhibited at the Banff Centre for Arts in Canada), “everything seem brighter, even slightly illusory. Reality seems hidden beneath a thin film of appearance”. He felt that the world was vibrating as if something was about to break through the film of illusion. I wouldn’t say that I feel such a tension, but I agree that the world without virtual glasses strangely transforms into a surface which feels like a flat screen. Augmented elements, hovering over real-world objects confuse the eye, blurring the sense of perspective.
+			<br><br>
+			There is also a desktop version of virtual reality, with a through-the-window view serving as a confined format of virtual existence. 
+			The overly experienced visitors of virtual worlds often have peculiar sensations when they deal with regular reality. Images and expectations of virtual world blend with the real, and we are tend to make more mistakes or improper gestures. I can’t count the times when I unconsciously tried to mentally press the cmd+z combination after doing something wrong with a physical object — for instance, when writing or drawing something on paper. Things can become even more confusing. Every time when I use a right-click context menu to copy something, I feel a slight pressure on my right hand, as if something ephemeral was inserted into it. This feeling can be, in a way, very useful. Sometimes due to my lack of attention I might forget what I was doing and start browsing things or switch to another project, but after I notice that the feeling in my right hand is still exist I realize that I actually forgot to paste something. Proprioceptive senses of my body developed in junction with my indistinguishable computer prosthesis. <br><br> 
+			</p></div>
+
+
+
 		<div id="container-overlay"></div>
 
 		<section>
 	</div>
 
 
-<!-- 	<div class="path" id="path1"></div>
-	<div class="path" id="path2"></div>
-	<div class="path" id="path3"></div>
-	<div class="path" id="path4"></div>
-	<div class="path" id="path5"></div> -->
-	<div id="polygon-wrap">
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-</div>
+	<div class="polygon-wrap">
+  <div class="polygons poly1"></div>
+  <div class="polygons poly2"></div>
+  <div class="polygons poly3"></div>
+  <div class="polygons poly4"></div>
+  <div class="polygons poly5"></div>
+  <div class="polygons poly6"></div>
+  <div class="polygons poly7"></div>
+	</div>
+	<div class="table">
+		<a href="#one" class="table t1">Immaterial space</a>
+		<a href="#two" class="table t2">After the Sun Expansion</a>
+		<a href="#three" class="table t3">Alternative Labour </a>
+		<a href="#four" class="table t4">(Virtual) Reality</a>
+		<a href="#five" class="table t5">Body Modification</a>
+		<a href="#six" class="table t6">Designer Babies</a>
+		<a href="#seven" class="table t7">End</a>
+		<a href="#eight" class="table t8">References</a>
+		</div>
+	<div class="block"></div>
 </div>
 
-	
 
-
-</div>
 
 
 
@@ -186,20 +202,30 @@
 $(window).on("scroll", function() {
     
 
-
-
-
-
     if($(window).scrollTop() > $('#one').position().top + 350 ){
         $(".t1").addClass("view");
     } else {
        $(".t1").removeClass("view");
     }
+
     if($(window).scrollTop() > $('#two').position().top -275 ){
     	$(".t1").removeClass("view");
         $(".t2").addClass("view");
+        $(".poly2").addClass("poly2-two");
+        $(".poly1").addClass("poly1-two");
+        $(".poly3").addClass("poly3-two");
+        $(".poly4").addClass("poly4-two");
+        $(".poly5").addClass("poly5-two");
+        $(".poly6").addClass("poly6-two");
+
     } else {
        $(".t2").removeClass("view");
+       $(".poly2").removeClass("poly2-two");
+       $(".poly1").removeClass("poly1-two");
+       $(".poly3").removeClass("poly3-two");
+       $(".poly4").removeClass("poly4-two");
+       $(".poly5").removeClass("poly5-two");
+       $(".poly6").removeClass("poly6-two");
     } 
     if($(window).scrollTop() > $('#three').position().top -275 ){
     	$(".t2").removeClass("view");
