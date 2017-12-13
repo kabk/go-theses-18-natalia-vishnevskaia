@@ -41,6 +41,16 @@ body,html {
 	display: none;
 
 }
+
+.polygon-wrap{
+/*top:0;*/
+position: absolute;
+}
+.polygons {
+	position: absolute;
+/*	top:0;*/
+}
+
 p {
 	font-size: 12pt;
 	}
