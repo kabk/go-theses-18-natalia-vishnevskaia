@@ -1,0 +1,39 @@
+
+@page {
+	size:A4;
+	margin:0;
+}
+@page :first {
+
+}
+
+#firsttitle {
+	font-size: 3cm;
+	text-align: center;
+	margin-top: 8cm;
+	margin-left: 0;
+}
+
+	body,html {
+		overflow: visible;
+	}
+	.container {
+		margin-top: 12cm;
+		width:50%;
+	}
+	#container-overlay {
+		display: none;
+	}
+	section {
+		overflow: visible;
+	}
+	p {
+		font-size: 19px;
+	}
+	h1 {
+		font-size: 60px;
+}
+
+a {
+	display:none;
+}
