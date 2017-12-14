@@ -80,6 +80,11 @@ p {
 	margin-left:-32%;
 	text-align: left;
 }
+p::first-letter {
+	  initial-letter: 4;
+  -webkit-initial-letter: 4;
+	/* font-size:500%;*/
+}
 #stars {
 	width:100%;
 	text-align: center; 
@@ -129,10 +134,9 @@ label {
 	margin-bottom: 10px;
 }
 .t1,.t2,.t3,.t4,.t5,.t6,.t7,.t8 {
-	display: block; 
+/*	display: block; 
 	top:10%
-	right:0;
-/*	position: fixed;*/
+	right:0;*/
 	font-size: 11pt;
 	transition: all 0.2s ease-in-out;
 }

@@ -63,7 +63,7 @@
 			
 			<div class="textblock" id="two">
 			<h1 class="title" id="secondtitle">After the Sun Expansion </h1>
-			<p>Oh, how close they got to human reasoning. However, it took them decades to learn how to perceive the physical world around them and how to navigate in space — first robots took hours to find and pick up a few blocks on the table, and sometimes they would even fail completely. And no wonder why it took them so long to acquire these skills — experience about the nature is encoded in the largest and oldest parts of the human brain. Survival instinct takes its birth from the moment when first two-cells living being won in the competition over food or space. Human brains kept these billions years of intuitive and sensorimotor experiences. However, the rationale and logic processes are much younger, thus it was easier to imitate them for first robotic intellects. <br><br>
+			<p class="subhead">Oh, how close they got to human reasoning. However, it took them decades to learn how to perceive the physical world around them and how to navigate in space — first robots took hours to find and pick up a few blocks on the table, and sometimes they would even fail completely. And no wonder why it took them so long to acquire these skills — experience about the nature is encoded in the largest and oldest parts of the human brain. Survival instinct takes its birth from the moment when first two-cells living being won in the competition over food or space. Human brains kept these billions years of intuitive and sensorimotor experiences. However, the rationale and logic processes are much younger, thus it was easier to imitate them for first robotic intellects. <br><br>
 			Thousand of years later, they exceeded humans’ physical abilities and intelligence. The machines are able to reproduce themselves and since they are not restricted anymore by human whim or preconceptions, they vary immensely in shape, size, function and surpassed the existing biosphere in diversity. I’ve seen malicious hardware parasites of planetary scale, when I still had eyes. They easily navigate in space, analyzing millions of models of interactions and their consequences before they take any action — faster than the human thought can born.
 			<br><br>
 			However I still have doubts on their ability think as humans and intuit.
@@ -114,7 +114,7 @@
 			<br><br>
 			There is another distinctive feature which users face in digital worlds, especially when using virtual reality headsets. Actions taken in the virtual world often have a serious time lag, but this technical detail must be solved very soon with the advance of computational power.
 			<br><br>
-			<img id="imgfirst" src="images/dervish1.jpg"><img id="imgsecond" src="images/dervish2.jpg"><br><span class="txt frst"> "Dancing with the Virtual Dervish", Yacov Sharir and Diane Gromala, 1994   </span>
+			<img id="imgfirst" src="images/dervish1.jpg"><img id="imgsecond" src="images/dervish2.jpg"><br><span class="txt frst"> "Dancing with the Virtual Dervish", Yacov Sharir and Diane Gromala, 1994</span>
 			Actually, there is a certain danger of having constant access to virtual and augmented reality headsets and glasses. It lies in the fact that when you take the display off, you not only might feel a slight nausea, but also an effect which Michael Heim called “Alternate World Syndrome”. How he explained it, after hours of immersion in 360-degree simulation in 1994 (one of the first virtual reality artworks, ‘Virtual Dervish’ was made by Marcos Novak, Diane Gromala and Yakov Sharir and exhibited at the Banff Centre for Arts in Canada), “everything seem brighter, even slightly illusory. Reality seems hidden beneath a thin film of appearance”. He felt that the world was vibrating as if something was about to break through the film of illusion. I wouldn’t say that I feel such a tension, but I agree that the world without virtual glasses strangely transforms into a surface which feels like a flat screen. Augmented elements, hovering over real-world objects confuse the eye, blurring the sense of perspective. 
 			<br><br>
 			There is also a desktop version of virtual reality, with a through-the-window view serving as a confined format of virtual existence. 
@@ -206,7 +206,8 @@
 		<a href="#six" class="table t6">Designer Babies</a>
 		<a href="#seven" class="table t7">End</a>
 		<a href="#eight" class="table t8">References</a>
-		</div>
+	</div>
+
 	<div class="block"></div>
 </div>
 
@@ -222,14 +223,14 @@
 
  $(".table").click(function(event){
          event.preventDefault();
-         //calculate destination place
+      
          var dest=0;
          if($(this.hash).offset().top > $(document).height()-$(window).height()){
               dest=$(document).height()-$(window).height();
          }else{
               dest=$(this.hash).offset().top;
          }
-         //go to destination
+         
          $('html,body').animate({scrollTop:dest}, 1000,'swing');
      });
 
