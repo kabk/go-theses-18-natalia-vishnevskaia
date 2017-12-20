@@ -56,14 +56,13 @@ h1 {
 	text-align: center;
 /*	margin-left: 8%;*/
 	margin-top:10%;
-	font-size: 110pt;
+	font-size: 70pt;
 	font-weight: 300;
 	/*z-index: 1000;*/
 	padding-bottom: 0;
 /*	font-family: 'Roboto';*/
 	font-family: 'Bernhard Gothic BQ';
 	text-transform: uppercase;
-	line-height: 120px;
 }
 p {
 	font-size: 21px;
@@ -72,10 +71,7 @@ p {
 
 }
 .textblock {
-	margin: 0 auto;
-	width:100%;
 	margin-bottom: 50%;
-
 }
 #formal {
 	font-family: 'Roboto';
@@ -89,28 +85,11 @@ p {
 	margin-left:-32%;
 	text-align: left;
 }
-/*p::first-letter {
+p::first-letter {
 	  initial-letter: 4;
   -webkit-initial-letter: 4;
   
-}*/
-
-/*.initial {
-	font-size: 100pt;
-}*/
-
-/*p::first-letter {
- font-size: 530%;
-float: left;
-}*/
-p.initial:first-letter {
-	font-size: 95pt;
-	float : left;
-	line-height: 50px;
-	padding-top: 25px; 
- 	padding-right: 4px;
- 	padding-bottom: 3px;
-
+	/* font-size:500%;*/
 }
 #stars {
 	width:100%;
