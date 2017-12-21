@@ -1,0 +1,249 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+</head>
+<style>
+body, html {
+/*	width: 100%;
+	height:100%;*/
+	padding: 0;
+	margin: 0;
+	background: black;
+	
+
+}
+	.title {
+/*	width:100%;
+	height:100%;*/
+/*	position: relative;
+	border:3px solid red;
+	top:50%;
+	z-index: 1000;
+	display: block;*/
+}
+
+   .newtitle {
+	margin-top:5%;
+	font-size: 110pt;
+	padding-bottom: 0;
+	line-height: 120px;
+	transition: all 0.3s;
+}
+
+
+h1 {
+	margin-top:15%;
+	color:white;
+	line-height: 90px;
+	font-size: 80pt;
+	text-align: center;
+/*	display: block;*/
+/*	margin: 0 auto;*/
+	color:white;
+	/*bottom:30%;*/
+	/*position: relative;*/
+	
+	font-family: 'Bernhard Gothic BQ';
+	text-transform: uppercase;
+
+}
+
+#container {
+	width: 100%;
+	height:100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align:center;
+	/*position: relative;*/
+}
+/*#black {
+	width:100%;
+	height:100%;
+	background: black;
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+	clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+}*/
+/*.background {
+background: white;
+}*/
+svg {
+	position: absolute;
+	z-index: -1;
+	margin: 0 auto;
+	  left: 0;
+	  right:0;
+	  top:0;
+  transform: rotate(270deg);
+}
+
+circle {
+  stroke-width: 2em;
+  fill: transparent;
+  transform: rotate(0.1deg); // to fix Firefox
+}
+text {
+/*	  transform: rotate(190deg);*/
+
+}
+
+.path-background {
+  stroke: black;
+}
+
+.path-cover {
+  stroke: white;
+  stroke-width: 2.04em;
+  
+}
+
+.path-fill {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+</style>
+<body>
+	<div id="container">
+	<div id="black">
+		
+	<svg viewBox="0 0 700 700" width="700" height="700" xml:space="preserve" id="svg" xmlns="http://www.w3.org/2000/svg">
+  <circle class="path-background" cx="350" cy="350" r="0" fill="none" stroke-dasharray="0em"stroke-dashoffset="0em"></circle>
+  <circle class="path-cover" cx="350" cy="350" r="0" fill="none" stroke-dasharray="0em"stroke-dashoffset="0em"></circle>
+  <circle class="path-center" cx="350" cy="350" r="0" fill="none" stroke-dasharray="0em"stroke-dashoffset="0em"></circle>
+<!--    <text id="title" x="50%" y="50%" text-anchor="middle" fill="white" transform="rotate(0 0 90)">Omega Point</text> -->
+
+</svg>
+<div id="title"><h1>Omega<br>Point</h1></div>
+</div>
+</div>
+<script>
+window.onload = function () {
+// document.getElementById("container").addEventListener("mousemove",function (event) {
+// 	circleMaker(event);
+// });
+// function circleMaker(e) {
+
+  var radius = 17, 
+      circumference = 2 * radius * Math.PI; 
+  
+  var els = document.querySelectorAll('circle');
+  Array.prototype.forEach.call(els, function (el) {
+    el.setAttribute('stroke-dasharray', circumference + 'em');
+    el.setAttribute('r', radius + 'em');
+  });
+  
+  document.querySelector('.path-center').setAttribute('r', (radius - 0.01 + 'em'));
+
+  	  var currentCount = 1, 
+      maxCount = 50;
+  
+  		var intervalId = setInterval(function () { 
+    	if (currentCount > maxCount) {
+    		 // document.getElementsByTagName("h1").style.color = "blue";
+    	$('h1').addClass('newtitle');
+    	
+
+      // clearInterval(intervalId);
+      console.log('HELL YEAH');
+   	  return;
+   	 
+
+   		}
+
+	var offset = -(circumference /  maxCount) * currentCount + 'em';
+  	console.log(currentCount, offset);
+
+  	document.querySelector('.path-cover').setAttribute('stroke-dashoffset', offset);
+  	currentCount++;
+  }, 10);
+
+};
+
+// if ( step < sumSteps){
+//           //set step to next step
+//           step ++
+//           //and wait for creating next rotation an call anim again...
+//           pathAnim = setTimeout(anim, 100/imagesPerSecond);
+//         } else {
+//           //animation is finished;
+//           clearTimeout(pathAnim);
+//           //call callback function
+//           if (callback) return callback();
+//         }
+//       }
+//       //now call our anim loop function
+//       anim();
+//     }
+//     //now call our Aimation at circle...
+//     animateAtCircle(1000, function(){console.log('finished');});
+
+//  };
+
+
+  // var currentCount = 1, 
+  //     maxCount = 300;
+  
+  // var intervalId = setInterval(function () { 
+  //   if (currentCount > maxCount) {
+  //     clearInterval(intervalId);
+  //     return;
+  //   }
+  //   var offset = -(circumference / maxCount) * currentCount + 'em';
+  //   console.log(currentCount, offset);
+
+  //   document.querySelector('.path-cover').setAttribute('stroke-dashoffset', offset);
+        
+  //   currentCount++;
+  // }, 100);
+
+
+
+
+
+      //an circle has 360 degrees
+      //so my stepwidth is:
+     
+      //and begin with our animation function
+    
+        //rotate the circle relative
+        //to the midpoint of circlePath
+    //     elementToAnimate.setAttribute("transform",`rotate(
+    //       ${step*stepWidth},
+    //       ${circlePath.getAttribute('cx')},
+    //       ${circlePath.getAttribute('cy')}
+    //       )`);
+    //     //until step smaller then sumSteps
+    //     if ( step < sumSteps){
+    //       //set step to next step
+    //       step ++
+    //       //and wait for creating next rotation an call anim again...
+    //       pathAnim = setTimeout(anim, 1000/imagesPerSecond);
+    //     } else {
+    //       //animation is finished;
+    //       clearTimeout(pathAnim);
+    //       //call callback function
+    //       if (callback) return callback();
+    //     }
+    //   }
+    //   //now call our anim loop function
+    //   anim();
+    // }
+    // //now call our Aimation at circle...
+    // animateAtCircle(myAniCircle,myCirclePath,5000, function(){console.log('finished');});
+
+</script>
+
+</body>
+
+</html>
