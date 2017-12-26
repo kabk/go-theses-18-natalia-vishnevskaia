@@ -15,10 +15,12 @@
 	margin-top: 8cm;
 	margin-left: 0;
 }*/
-
+h2 {
+	page-break-before: always;
+}
 h2 {
 	display: block;
-	float:left;
+	/*float:left;*/
 /*	text-align: center; */
 	font-size: 140pt;
 	text-transform: uppercase;
