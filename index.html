@@ -79,7 +79,7 @@
 			<div class="textblock" id="beforethree"></div>
 			<div class="textblock" id="emptythree"></div>
 			<div class="textblock" id="three">
-			<h1 class="title" id="secondtitle">Keeping Mind And Body Busy</h1>
+			<h1 class="title" id="secondtitle">Labor as Passé</h1>
 			<p class="initial">I</p><p> was squeezed into a tiny capsule, my head touching my knees. The capsule was falling back towards Earth after a long interplanetary voyage. Everything looked gray, as if I couldn’t distinguish colors. I woke up. Are there even any colors in outer space? After all, the images we have from NASA have all been vibrantly colorized using image editors…
 			<br><br>
 			Such strange feelings I had after this dream. It was a distant future dominated by intelligent machines, and all goods in that world were so cheap and plentiful that mankind’s only goal was to search for the most entertaining activities. In fact, most people were in the business of amusing each other. Regular labor became passé. 
@@ -203,7 +203,11 @@
 			</p></div>
 
 
+			<div class="references">
 
+
+
+				</div>
 		<div id="container-overlay"></div>
 
 
@@ -215,16 +219,18 @@
 
 
 	<div class="table-all">
-		<a href="#one" class="table t1">Omega Point</a>
-		<a href="#two" class="table t2">After the Sun Expansion</a>
-		<a href="#three" class="table t3">Alternative Labour </a>
-		<a href="#four" class="table t4">(Virtual) Reality</a>
-		<a href="#five" class="table t5">Third Ear</a>
-		<a href="#six" class="table t6">Designer Babies</a>
-		<a href="#seven" class="table t7">The Dialogue</a>
-		<a href="#eight" class="table t8">References</a>
+		<a href="#one" class="table t1"></a>
+		<a href="#two" class="table t2"></a>
+		<a href="#three" class="table t3"></a>
+		<a href="#four" class="table t4"></a>
+		<a href="#five" class="table t5"></a>
+		<a href="#six" class="table t6"></a>
+		<a href="#seven" class="table t7"></a>
 	</div>
 
+	<div class="refs">
+		<a href="#refs"></a>
+		</div>
 	<div class="block"></div>
 	</div>
 
@@ -285,6 +291,7 @@ $(window).on("scroll", function() {
 	}
 	if($(window).scrollTop() > $('#emptytwo').position().top -275 ){
 		$('body').removeClass("color-two");
+		$("#container-overlay").removeClass("block-container-one");
 	}
 
 
@@ -324,6 +331,7 @@ $(window).on("scroll", function() {
 	}
 	if($(window).scrollTop() > $('#emptythree').position().top -275 ){
 		$('body').removeClass("color-three");
+		$("#container-overlay").removeClass("block-container-two");
 	}
 
 
@@ -361,6 +369,7 @@ $(window).on("scroll", function() {
 	}
 	if($(window).scrollTop() > $('#emptyfour').position().top -275 ){
 		$('body').removeClass("color-four");
+		$("#container-overlay").removeClass("block-container-three");
 	}
 
 
@@ -382,6 +391,7 @@ if($(window).scrollTop() > $('#beforefive').position().top -275 ){
 	}
 	if($(window).scrollTop() > $('#emptyfive').position().top -275 ){
 		$('body').removeClass("color-five");
+		$("#container-overlay").removeClass("block-container-four");
 	}
 
 
@@ -395,14 +405,15 @@ if($(window).scrollTop() > $('#beforefive').position().top -275 ){
 
 if($(window).scrollTop() > $('#beforesix').position().top -275 ){
 		$('body').addClass("color-six");
-		$("#container-overlay").addClass("block-container-four");
+		$("#container-overlay").addClass("block-container-five");
 	}
 	else {
 		$('body').removeClass("color-six");
-		$("#container-overlay").removeClass("block-container-four");
+		$("#container-overlay").removeClass("block-container-five");
 	}
 	if($(window).scrollTop() > $('#emptysix').position().top -275 ){
 		$('body').removeClass("color-six");
+		$("#container-overlay").removeClass("block-container-five");
 	}
 
 
@@ -417,14 +428,15 @@ if($(window).scrollTop() > $('#beforesix').position().top -275 ){
 
     if($(window).scrollTop() > $('#beforeseven').position().top -275 ){
 		$('body').addClass("color-seven");
-		$("#container-overlay").addClass("block-container-five");
+		$("#container-overlay").addClass("block-container-six");
 	}
 	else {
 		$('body').removeClass("color-seven");
-		$("#container-overlay").removeClass("block-container-five");
+		$("#container-overlay").removeClass("block-container-six");
 	}
 	if($(window).scrollTop() > $('#emptyseven').position().top -275 ){
 		$('body').removeClass("color-seven");
+
 	}
 
 
