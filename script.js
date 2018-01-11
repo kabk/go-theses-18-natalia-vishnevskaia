@@ -469,7 +469,66 @@ if($(window).scrollTop() > $('#beforefive').position().top -275 ){
 
 
 
-        
+var morphing29 = anime({
+  targets: '#morphing #XMLID_12_',
+  points: [
+    { value: '830,58 743,134 809,34 ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 500,
+});
+
+var morphing30 = anime({
+  targets: '#morphing #XMLID_14_',
+  points: [
+    { value: '814,176 731,152 602,319.2  ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 1000,
+});
+var morphing31 = anime({
+  targets: '#morphing #XMLID_15_',
+  points: [
+    { value: '672,253 757,319.2 584,375' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 800,
+});
+
+var morphing32 = anime({
+  targets: '#morphing #XMLID_16_',
+  points: [
+    { value: '226,375 123,178 48,207 ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 600,
+});
+var morphing33 = anime({
+  targets: '#morphing #XMLID_17_',
+  points: [
+    { value: '646,201 761,78 786,145' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 500,
+});
+
+var morphing34 = anime({
+  targets: '#morphing #XMLID_18_',
+  points: [
+    { value: '134.3,230.4 21,297.6 183,344.2' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 1000,
+});
+var morphing35 = anime({
+  targets: '#morphing #XMLID_19_',
+  points: [
+    { value: '108,201 134.3,259.9 97.3,249' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 900,
+});
+
     } else {
        $(".t5").removeClass("view");
     } 
@@ -492,6 +551,70 @@ if($(window).scrollTop() > $('#beforesix').position().top -275 ){
     if($(window).scrollTop() > $('#six').position().top -275 ){
     	$(".t5").removeClass("view");
         $(".t6").addClass("view");
+
+
+
+var morphing29 = anime({
+  targets: '#morphing #XMLID_12_',
+  points: [
+    { value: '16,428 21,62 823,75  ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 500,
+});
+
+var morphing30 = anime({
+  targets: '#morphing #XMLID_14_',
+  points: [
+    { value: '777,412 16,428 803,480  ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 1000,
+});
+var morphing31 = anime({
+  targets: '#morphing #XMLID_15_',
+  points: [
+    { value: '16,494 821,391 803,480' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 800,
+});
+
+var morphing32 = anime({
+  targets: '#morphing #XMLID_16_',
+  points: [
+    { value: '829,93 72,22 21,62 ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 600,
+});
+var morphing33 = anime({
+  targets: '#morphing #XMLID_17_',
+  points: [
+    { value: '16,428 21,468 803,480 ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 500,
+});
+
+var morphing34 = anime({
+  targets: '#morphing #XMLID_18_',
+  points: [
+    { value: '21,468 16,494 777,412' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 1000,
+});
+var morphing35 = anime({
+  targets: '#morphing #XMLID_19_',
+  points: [
+    { value: '72,22 823,75 829,93' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 900,
+});
+
+
     } else {
        $(".t6").removeClass("view");
     } 
@@ -516,6 +639,71 @@ if($(window).scrollTop() > $('#beforesix').position().top -275 ){
         if($(window).scrollTop() > $('#seven').position().top -275 ){
     	$(".t6").removeClass("view");
         $(".t7").addClass("view");
+
+
+
+var morphing8 = anime({
+  targets: '#morphing #XMLID_12_',
+  points: [
+    { value: '185.9,76.9 17.6,272.1 17.6,8' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 500,
+});
+
+var morphing9 = anime({
+  targets: '#morphing #XMLID_14_',
+  points: [
+    { value: '6,156.6 101.8,215.7 53.9,341 ' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 1000,
+});
+var morphing10 = anime({
+  targets: '#morphing #XMLID_15_',
+  points: [
+    { value: '820.2,42 711.9,179 820.2,289.1' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 800,
+});
+
+var morphing11 = anime({
+  targets: '#morphing #XMLID_16_',
+  points: [
+    { value: '839.9,272.1 644.8,422.4 820.2,525.4' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 600,
+});
+var morphing12 = anime({
+  targets: '#morphing #XMLID_17_',
+  points: [
+    { value: '711.9,280.1 732.5,386.6 796,324' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 500,
+});
+
+var morphing13 = anime({
+  targets: '#morphing #XMLID_18_',
+  points: [
+    { value: '165.2,537.1 38.3,478.3 70.9,392' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 1000,
+});
+var morphing14 = anime({
+  targets: '#morphing #XMLID_19_',
+  points: [
+    { value: '640.3,18.7 689.5,93 754,12.5' },
+  ],
+  easing: 'easeOutQuad',
+  duration: 900,
+});
+
+
+
     } else {
        $(".t7").removeClass("view");
     } 
