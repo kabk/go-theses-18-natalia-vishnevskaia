@@ -61,6 +61,8 @@ body {
 	/*margin: 0 auto;*/
 	height:65%;
 	padding: 0;
+		widows: 3;
+	orphans: 3;
 	text-align: justify;
 	text-justify:inter-word;
 	/*transition: all 400ms ase-in-out;*/
@@ -71,9 +73,15 @@ body {
 /*	z-index: 10;*/
 
 }
+
+.static {
+	display: none;
+}
 #container-overlay {
 	width:100%;
 	bottom:0;
+	left:0;
+	margin: 0 auto;
 	height:200px;
 	background: linear-gradient(
     rgba(255, 255, 255, 0) 0%,
@@ -84,7 +92,7 @@ body {
 }
 
 
-.block-container-one, .block-container-two, .block-container-three, .block-container-four, .block-container-five, .block-container-six{
+.block-container-one, .block-container-two, .block-container-three, .block-container-four, .block-container-five, .block-container-seven{
 display: none;
 }
 #stars {
@@ -101,14 +109,14 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-h2 {
+/*h2 {
 	display: none;
 	margin-top:20%;
 	font-size: 80pt;
 	font-family: 'Bernhard Gothic BQ';
-}
+}*/
 
-h1 {
+h3, h2, h1 {
 	text-align: center;
 	left:0;
 	right:0;
@@ -123,12 +131,35 @@ h1 {
 	padding-bottom: 0;
 	transition: all 0.5s ease-in-out;
 }
+
+
+#abstract p {
+	font-size: 2vw;
+	font-family: 'Bernhard Gothic BQ';
+}
+.colophon {
+	text-align: center;
+	margin-top:10%;
+	margin-bottom: 50%;
+}
+
+.colophon p {
+	font-size: 2vw;
+	font-family: 'Bernhard Gothic BQ';
+}
+.colophon h1 {
+	font-size: 4vw;
+
+}
+h1 {
+	margin-top: 3%;
+}
 .title {
-	position: absolute;
+/*	position: relative;*/
 	
 /*	border: 2pt solid red;*/
 /*	margin-left: 8%;*/
-	margin-top:-30%;
+/*	margin-top:-30%;*/
 
 /*	font-family: 'Roboto';*/
 	
@@ -148,20 +179,31 @@ h1 {
 }
 
 #subtitle {
-	font-size: 5vw;
-	line-height: 12vw;
+	font-size: 4vw;
+	line-height: 6vw;
+
+/*		border: 3px solid green;*/
 }
+
+#bodyconfusion {
+/*	top: 50%;border: 3px solid green;*/
+}
+
+#help {
+	/*margin-top:-40%;*/
+}
+
 p {
+
 	font-size: 21px;
 	/*font-weight: 300;*/
 	/*z-index: 1000;*/
 }
 
 .textblock {
-	width:60%;
+	width:80%;
 	margin: 0 auto;
-
-	margin-bottom: 50%;
+	/*margin-bottom: 50%;*/
 
 }
 
@@ -220,16 +262,6 @@ p.initial:first-letter {
 #txt-mono {
 	font-family: 'VT323', monospace;
 }
-/*img {
-	width: 30%;
-	margin-left:-32%;
-	margin-top: 3%; 
-	float: left;*/
-/*	position: relative;
-
-/*#imgsecond {
-	margin-top:30%;
-}*/
 label {
 	position: absolute;
 	top:20%;
@@ -252,34 +284,52 @@ label {
 	
 	
 }
-.t1,.t2,.t3,.t4,.t5,.t6,.t7  {
+.t1,.t2,.t3,.t4,.t5,.t6,.t7, .t0   {
 /*	display: block; 
 	top:10%
 	right:0;*/
 /*	width:100%;*/
 	/*height:100%;*/
-	width:40px;
-	height:40px;
+	width:60px;
+	height:60px;
 	/*border:3pt solid black;*/
 	background-color: black;
 	font-size: 9pt;
-	-webkit-clip-path: polygon(30% 50%, 0 100%, 0 0);
-	clip-path: polygon(30% 50%, 0 100%, 0 0);
+	-webkit-clip-path: polygon(40% 50%, 0 100%, 0 0);
+	clip-path: polygon(40% 50%, 0 100%, 0 0);
+
 
 	/*text-transform: uppercase;*/
 	transition: all 0.2s ease-in-out;
 
 }
-
-.table-all a:hover {
-	-webkit-clip-path: polygon(50% 50%, 0 100%, 0 0);
-	clip-path: polygon(50% 50%, 0 100%, 0 0);
+.bigger {
+	-webkit-clip-path: polygon(80% 50%, 0 100%, 0 0);
+	clip-path: polygon(80% 50%, 0 100%, 0 0);
 }
+.table-all a:hover {
+	-webkit-clip-path: polygon(60% 50%, 0 100%, 0 0);
+	clip-path: polygon(60% 50%, 0 100%, 0 0);
+	background-color: grey;
+}
+
+
+.images {
+	width:25%;
+	display: block;
+	margin-top: 5%;
+	margin-left: auto;
+    margin-right: auto; }
+
+ .block-images1, .block-images2,.block-images3,.block-images4,.block-images5,.block-images6 {
+ 	display: none;
+ }
 
 .container {
 	width: 100%;
 }
 .references {
+	cursor: pointer;
 	position: fixed;
 /*	float:right;*/
 	background: white;
@@ -294,7 +344,7 @@ label {
 	transition: all 0.5s ease-in-out;
 	overflow: auto;
 }
-h3 {
+h4 {
 	font-size: 3vw;
 	font-family: 'Bernhard Gothic BQ';
 	text-transform: uppercase;
@@ -312,6 +362,10 @@ h1.ref {
 	font-size: 5vw;
 	line-height: 6vw;
 	transition: all 0.5s ease-in-out;
+}
+.maintext {
+	width:70%;
+	margin: 0 auto;
 }
 
 #subtitle.refere {
@@ -332,6 +386,7 @@ h1.ref {
 	z-index: 1000;
 	width:90px;
 	height:90px;
+	cursor: pointer;
 	background-color: black;
 	-webkit-clip-path: polygon(54% 50%, 100% 0, 100% 100%);
 			clip-path: polygon(54% 50%, 100% 0, 100% 100%);
@@ -339,15 +394,18 @@ h1.ref {
 	z-index: 100000;
 }
 
-
 .refs:hover {
+	
 	-webkit-clip-path: polygon(24% 50%, 100% 0, 100% 100%);
 			clip-path: polygon(24% 50%, 100% 0, 100% 100%);
 }
 .refs:hover #references {
 	transition: 1s;
 	right:0;
+
 }
+
+
 /*
 .t1 {
 
@@ -389,21 +447,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 } */
 
 
-.images {
-	position: absolute;
-	left:0;
-	right:0;
-	width:100%;
-	/*height:100%;*/
-	margin: 0 auto;
-	margin-top:5%;
-	text-align: center;
-	display: inline-block;
-	z-index: 10000;
-	background: black;
 
-
-}
 .imgwrap {
 	margin-top:5%;
 	/*position: absolute;*/
@@ -419,34 +463,15 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 img {
 
 	/*width:auto;*/
-	height:50%;
+/*	height:50%;
 	max-height:40%;
-	padding-left:1%;
+	padding-left:1%;*/
 	/*padding-bottom: 5%;*/
-	filter: gray; /* IE5+ */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+	/*filter: gray;*/ /* IE5+ */
+  /*  -webkit-filter: grayscale(1);*/ /* Webkit Nightlies & Chrome Canary */
 }
 
-img:hover {
-	cursor: pointer;
-    filter: none;
-      -webkit-filter: grayscale(0);
-    }
-/*
-.overlay {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 0;
-	background-color: black;
-	overflow: hidden;
-	transition: .3s ease-in-out;
-}
-img:hover .overlay {
-	height:20%;
-}*/
+
 .text-overlay {
 	color: white;
 	text-align: center;
@@ -476,7 +501,7 @@ img:hover .overlay {
 
 .st0 {
 	fill:none;
-	stroke:#231F20;
+	stroke:#000000;
 	stroke-miterlimit:10;
 }
 .svgwrap {
@@ -490,7 +515,9 @@ z-index: 100;
 position: fixed;
 }
 
-
+.morphing.blocked {
+	display: none;
+}
 
 .polygon-wrap {
 top:0;
@@ -516,11 +543,18 @@ position: fixed;
 	 transition: all 0.5s ease-in-out;
 }
 .poly1 {
-	top: 80%;
-	left: 0;	
+	top: 20%;
+	left: 0%;	
 	background-color: black;
+	/*position: relative;*/
 -webkit-clip-path: polygon(100% 0, 16% 18%, 65% 20%);
+/* 	border-left: 30px solid transparent;
+    border-right: 850px solid transparent;
+    border-bottom: 120px solid red;*/
+  /*  position:relative;*/
 }
+/**/
+
 
 .poly1-two {
 	top: 30%;
